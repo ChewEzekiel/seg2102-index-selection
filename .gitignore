@@ -226,4 +226,5 @@ __marimo__/
 node_modules/
 tpch-data/
 *.parquet
-.env
+.env/
+.omc/
