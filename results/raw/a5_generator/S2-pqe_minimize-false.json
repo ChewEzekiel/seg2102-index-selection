@@ -1,0 +1,35 @@
+[
+  {
+    "createIndexes": "customer",
+    "indexes": [
+      {
+        "key": {
+          "c_acctbal": 1
+        },
+        "name": "combine_match_c_acctbal_idx"
+      }
+    ]
+  },
+  {
+    "createIndexes": "orders",
+    "indexes": [
+      {
+        "key": {
+          "o_custkey": 1
+        },
+        "name": "combine_lookup_o_custkey_idx"
+      }
+    ]
+  },
+  {
+    "createIndexes": "lineitem",
+    "indexes": [
+      {
+        "key": {
+          "_id.l_orderkey": 1
+        },
+        "name": "combine_lookup__id.l_orderkey_idx"
+      }
+    ]
+  }
+]
