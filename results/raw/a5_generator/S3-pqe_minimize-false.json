@@ -1,0 +1,13 @@
+[
+  {
+    "createIndexes": "orders-lineitem",
+    "indexes": [
+      {
+        "key": {
+          "o_custkey": 1
+        },
+        "name": "combine_lookup_o_custkey_idx"
+      }
+    ]
+  }
+]
